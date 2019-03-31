@@ -11,4 +11,7 @@ public class ExceptionMethods extends Exception{
 			return x/y;
 		
 	}
+	String reverseString(String x) {
+		
+	}
 }
