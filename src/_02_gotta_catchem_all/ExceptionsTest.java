@@ -52,10 +52,21 @@ class ExceptionsTest {
 	//   String and returns the reverse of that String. It should throw an IllegalStateException
 	//   if the String passed in is empty
 	
+	
 	//5. Complete the JUnit test method to test the reverseStringMethod.
 	@Test
 	public void testReverseString() {
-		
+		try {
+			String a = "";
+			assertEquals(a, em.reverseString(""));
+			fail("IllegalStateException not thrown");
+		} catch (IllegalStateException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+			String a = "something";
+			assertEquals("gnihtemos", em.reverseString(a));
+			
+		}
 	}
 	
 	

@@ -12,6 +12,15 @@ public class ExceptionMethods extends Exception{
 		
 	}
 	String reverseString(String x) {
+		String reverse = "";
+		if(x=="") {
+			throw new IllegalStateException();
+		}
+		for(int i = x.length()-1; i >= 0; i--) {
+			reverse += x.charAt(i);
+		}
+		
+		return reverse;
 		
 	}
 }
